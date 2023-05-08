@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8"> 
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="icon" type="image/png" href="assets/images/PaPets.png" width="100%">
+	<link rel="stylesheet" href="assets/images/lupaStatic.png">
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/exemplo.css">
+	
+	<title>PaPets</title>
+
+	<style>
+
+		h2 {
+			display: block;
+			margin-top: 110px;	
+		}
+
+		form {
+			max-width: 600px;
+		}
+		label {
+			display: block;
+			margin-top: 10px;
+		}
+		input[type="text"],
+		input[type="tel"],
+		select {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-top: 5px;
+			margin-bottom: 15px;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+
+<nav>
+		<a href="index.html"><img src="assets/images/PaPets.png" width="150"></a>
+		<h1>PaPets </h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="agendamento.html">Agendamento</a></li>
+			<li><a href="shop.html">Shopping</a></li>
+			<li><a href="adote.html">Adote</a></li>
+		</ul>
+		
+		<input type="text">
+		
+</nav>
+
+
+<body>
+
+	<h2>Agendamento de Serviços</h2>
+
+	<form method="post" action="agendar.php">
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome" required>
+
+		<label for="telefone">Telefone:</label>
+		<input type="tel" id="telefone" name="telefone" required>
+
+		<label for="nomepet">Nome do Pet:</label>
+		<input type="text" id="nomepet" name="nomepet" required>
+
+		<label for="local">Local:</label>
+		<select id="local" name="local">
+			<option value="Unidade 1">Unidade 1</option>
+			<option value="Unidade 2">Unidade 2</option>
+			<option value="Unidade 3">Unidade 3</option>
+		</select>
+
+		<label for="servico">Serviço:</label>
+		<select id="servico" name="servico">
+			<option value="Banho">Banho</option>
+			<option value="Tosa Higiênica">Tosa Higiênica</option>
+			<option value="Banho e Tosa">Banho e Tosa</option>
+		</select>
+
+		<label for="data">Data:</label>
+		<input type="date" id="data" name="data" required>
+
+		<label for="horario">Horário:</label>
+		<select id="horario" name="horario">
+			<option value="08:00">08:00</option>
+			<option value="09:00">09:00</option>
+			<option value="10:00">10:00</option>
+			<option value="11:00">11:00</option>
+			<option value="12:00">12:00</option>
+			<option value="13:00">13:00</option>
+			<option value="14:00">14:00</option>
+			<option value="15:00">15:00</option>
+			<option value="16:00">16:00</option>
+			<option value="17:00">17:00</option>
+			<option value="18:00">18:00</option>
+		</select>
+
+		<input type="submit" value="Agendar">
+	</form>
+
+</body>
+
+	<footer>
+		<p>&copy; 2023 PetShop Animal Feliz. Todos os direitos reservados.</p>
+	</footer>
+</html>
